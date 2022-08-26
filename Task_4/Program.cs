@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+Задача 4:
+Напишите программу, которая принимает на вход случайно сгенерированное число (от 1 до 1 000 000)
+ и проверяет, кратно ли оно одновременно 7 и 23.
+*/
+Console.Clear();
+
+int RndNumber = new Random().Next(1, 1000000);
+Console.WriteLine("Произвольное число = " + RndNumber);
+
+// проверяем, делится ли число RndNumber нацело на 7 и 23
+if ((RndNumber % 7 == 0) & (RndNumber % 23 == 0)) {
+    Console.WriteLine("Данное число делится и на 7, и на 23 одновременно");
+}
+else {
+    Console.WriteLine("Данное число не делится ни на 7, ни на 23 одновременно");
+}
